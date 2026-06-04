@@ -4,6 +4,7 @@ All notable public-safe changes to `charlesSKILL` are recorded here.
 
 ## 2026-05-28
 
+- Added repository governance files, publish checklist, preflight upload check, and handoff/manifest docs for core projects.
 - Added `PROJECTS.md` as the repository-level project portfolio and review entry.
 - Reframed the root README around five business lines: business automation, business analysis/data tooling, public opinion, AI environment governance, and AI work progress.
 - Updated quality review language to cover Seeyon contract drafting, public opinion tools, progress handoff, and GitHub Actions smoke checks.

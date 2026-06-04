@@ -66,12 +66,14 @@ Safety boundary:
 1. `README.md` for the overall purpose and quick map.
 2. `PROJECTS.md` for project-level business value and status.
 3. `SECURITY.md` for public repository boundaries.
-4. `docs/QUALITY_REVIEW.md` for quality criteria and next steps.
-5. Each project `SKILL.md` for reusable workflow details.
+4. `GOVERNANCE.md` and `PUBLISH_CHECKLIST.md` for upload rules.
+5. `docs/QUALITY_REVIEW.md` for quality criteria and next steps.
+6. Each project `README.md`, `SKILL.md`, `docs/MANIFEST.md`, or `docs/HANDOFF.md` for reusable workflow details.
 
 ## Maintenance Rules
 
 - Add every new project to this file before or during the same commit that introduces it.
 - Add or update a smoke check when a new script, config shape, or required file is introduced.
+- Add `docs/MANIFEST.md` or `docs/HANDOFF.md` for projects that teammates may reuse.
 - Update `CHANGELOG.md` for meaningful public-safe changes.
 - Keep examples fake and small; keep real outputs outside Git.

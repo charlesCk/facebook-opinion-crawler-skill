@@ -47,6 +47,8 @@
 charlesSKILL/
   README.md
   PROJECTS.md
+  GOVERNANCE.md
+  PUBLISH_CHECKLIST.md
   SECURITY.md
   CHANGELOG.md
   .github/workflows/
@@ -121,10 +123,12 @@ node 舆情监控SKILL/appstore/scripts/appstore_reviews_workbook.mjs 舆情监�
 提交前运行：
 
 ```bash
+python3 scripts/preflight_upload_check.py
 node tests/smoke_check.mjs
+git diff --check
 ```
 
-该检查只验证仓库结构、示例配置和脚本语法，不访问真实平台账号，也不读取本机私有数据。
+这些检查只验证公开安全边界、仓库结构、示例配置和脚本语法，不访问真实平台账号，也不读取本机私有数据。
 
 GitHub Actions 也会在提交后运行同样的 smoke check，确保公开仓库里的示例和脚本入口没有断。
 

@@ -27,6 +27,8 @@
 ```bash
 git status --short
 git diff --cached --name-only
+python3 scripts/preflight_upload_check.py
+node tests/smoke_check.mjs
 rg -n -i "(token|secret|password|passwd|cookie|api[_-]?key|access[_-]?key|client[_-]?secret|private key|BEGIN [A-Z ]*PRIVATE KEY|webhook|bearer)" .
 rg -n -i "(客户|学生|家长|合同|报价|收入|营收|利润|成本|订单|支付|内部|机密|账号|密码|手机号|身份证)" .
 ```
